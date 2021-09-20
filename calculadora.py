@@ -77,9 +77,13 @@ class Teste(TestCase):
         result = calculador.calcular(15, 10, 'multiplicacao')
         print(result)
         self.assertEqual(result, 150)
+        
+    def testar_divisao(self):
+        calculador = Calculadora()
+        result = calculador.calcular(15, 10, 'divisao')
+        print(result)
+        self.assertEqual(result, 1.5)
 
-
-calculador = Calculadora()
 
 
 if __name__ == "__main__":
